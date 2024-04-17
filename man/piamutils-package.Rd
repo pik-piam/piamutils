@@ -11,7 +11,7 @@ This package contains utilities and helpers needed in various piam libraries.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/pik-piam/piamutils}
+  \item \url{https://github.com/pik-piam/piamUtils}
 }
 
 }
