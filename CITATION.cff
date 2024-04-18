@@ -2,13 +2,15 @@ cff-version: 1.2.0
 message: If you use this software, please cite it using the metadata from this file.
 type: software
 title: 'piamutils: Utilities for the piam-verse'
-version: 0.0.3
-date-released: '2024-04-17'
+version: 0.0.4
+date-released: '2024-04-18'
 abstract: This package contains utilities and helpers needed in various piam libraries.
 authors:
 - family-names: Benke
   given-names: Falk
   email: benke@pik-potsdam.de
+  orcid:
+  - ~
 license: LGPL-3.0
-repository-code: https://github.com/pik-piam/piamUtils
+repository-code: https://github.com/pik-piam/piamutils
 
