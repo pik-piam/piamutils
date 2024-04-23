@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: If you use this software, please cite it using the metadata from this file.
 type: software
 title: 'piamutils: Utilities for the piam-verse'
-version: 0.0.6
+version: 0.0.7
 date-released: '2024-04-22'
 abstract: This package contains utilities and helpers needed in various piam libraries.
 authors:
