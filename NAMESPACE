@@ -2,6 +2,7 @@
 
 export(deletePlus)
 export(getSystemFile)
+export(niceround)
 export(substitutePlaceholder)
 importFrom(magclass,"getNames<-")
 importFrom(magclass,getNames)

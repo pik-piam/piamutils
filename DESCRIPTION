@@ -1,8 +1,8 @@
 Type: Package
 Package: piamutils
 Title: Utilities for the piam-verse
-Version: 0.0.7
-Date: 2024-04-22
+Version: 0.0.8
+Date: 2024-04-24
 Authors@R: c(
     person("Falk", "Benke", , "benke@pik-potsdam.de", role = c("aut", "cre")),
     person("Christof", "Schötz", role = "aut")
