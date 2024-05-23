@@ -22,6 +22,9 @@ getSystemFile <- function(files, package) {
     # will return correct results.
     system.file(files, package = package, mustWork = TRUE)
   }
+  if (!file.exists(fileNames)) {
+    stop("no file found")
+  }
 
   return(fileNames)
 }
