@@ -4,12 +4,14 @@
 \alias{getSystemFile}
 \title{Find the path to R System Files for a given R library}
 \usage{
-getSystemFile(files, package)
+getSystemFile(..., package = "base", mustWork = FALSE)
 }
 \arguments{
-\item{files}{character vectors, specifying subdirectory and file(s) within some package}
+\item{...}{character vectors, specifying subdirectory and file(s) within some package}
 
 \item{package}{a character string with the name of a single package}
+
+\item{mustWork}{if TRUE, an error is given if there are no matching files}
 }
 \description{
 A wrapper around \link[base]{system.file} to make sure that the correct paths
