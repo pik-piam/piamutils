@@ -1,8 +1,8 @@
 Type: Package
 Package: piamutils
 Title: Utilities for the piam-verse
-Version: 0.0.11
-Date: 2024-06-28
+Version: 0.0.12
+Date: 2024-08-15
 Authors@R: c(
     person("Falk", "Benke", , "benke@pik-potsdam.de", role = c("aut", "cre")),
     person("Christof", "Schötz", role = "aut")
@@ -17,4 +17,4 @@ Imports:
 Suggests:
     testthat
 Encoding: UTF-8
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
