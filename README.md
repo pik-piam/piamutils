@@ -1,8 +1,8 @@
 # Utilities for the piam-verse
 
-R package **piamutils**, version **0.0.12**
+R package **piamutils**, version **0.0.13**
 
-[![CRAN status](https://www.r-pkg.org/badges/version/piamutils)](https://cran.r-project.org/package=piamutils)  [![R build status](https://github.com/pik-piam/piamutils/workflows/check/badge.svg)](https://github.com/pik-piam/piamutils/actions) [![codecov](https://codecov.io/gh/pik-piam/piamutils/branch/master/graph/badge.svg)](https://app.codecov.io/gh/pik-piam/piamutils) [![r-universe](https://pik-piam.r-universe.dev/badges/piamutils)](https://pik-piam.r-universe.dev/builds)
+[![CRAN status](https://www.r-pkg.org/badges/version/piamutils)](https://cran.r-project.org/package=piamutils) [![R build status](https://github.com/pik-piam/piamutils/workflows/check/badge.svg)](https://github.com/pik-piam/piamutils/actions) [![codecov](https://codecov.io/gh/pik-piam/piamutils/branch/master/graph/badge.svg)](https://app.codecov.io/gh/pik-piam/piamutils) [![r-universe](https://pik-piam.r-universe.dev/badges/piamutils)](https://pik-piam.r-universe.dev/builds)
 
 ## Purpose and Functionality
 
@@ -38,16 +38,17 @@ In case of questions / problems please contact Falk Benke <benke@pik-potsdam.de>
 
 To cite package **piamutils** in publications use:
 
-Benke F, Schötz C (2024). _piamutils: Utilities for the piam-verse_. R package version 0.0.12, <https://github.com/pik-piam/piamutils>.
+Benke F, Schötz C (2025). "piamutils: Utilities for the piam-verse." Version: 0.0.13, <https://github.com/pik-piam/piamutils>.
 
 A BibTeX entry for LaTeX users is
 
  ```latex
-@Manual{,
+@Misc{,
   title = {piamutils: Utilities for the piam-verse},
   author = {Falk Benke and Christof Schötz},
-  year = {2024},
-  note = {R package version 0.0.12},
+  date = {2025-01-24},
+  year = {2025},
   url = {https://github.com/pik-piam/piamutils},
+  note = {Version: 0.0.13},
 }
 ```

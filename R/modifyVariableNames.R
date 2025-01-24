@@ -61,7 +61,7 @@ substitutePlaceholder <- function(
     x, writeMifSuffix = NULL,
     substitutions = c(
       "." = "$dot$"
-  )) {
+    )) {
   modifyVariableNames(
     x,
     modify = .substitutePlaceholderString,
@@ -149,7 +149,10 @@ modifyVariableNames <- function(x, modify, writeMifSuffix = NULL, ...) {
       return(x)
     }
 
+    if (length(x) == 0) {
+      return(x)
+    }
+
     stop("Cannot handle input format.")
   }
 }
-
