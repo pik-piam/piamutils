@@ -1,8 +1,8 @@
 Type: Package
 Package: piamutils
 Title: Utilities for the piam-verse
-Version: 0.0.13
-Date: 2025-01-24
+Version: 0.1.0
+Date: 2025-06-16
 Authors@R: c(
     person("Falk", "Benke", , "benke@pik-potsdam.de", role = c("aut", "cre")),
     person("Christof", "Schötz", role = "aut")
@@ -11,9 +11,12 @@ Description: This package contains utilities and helpers needed in various piam 
 License: LGPL-3
 URL: https://github.com/pik-piam/piamutils
 Imports:
+    dplyr,
     magclass,
+    magrittr,
     pkgload,
-    quitte
+    quitte,
+    rlang
 Suggests:
     testthat
 Encoding: UTF-8
