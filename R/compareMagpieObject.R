@@ -2,17 +2,23 @@
 #'
 #' A helper to analyze two magpie objects for differences.
 #'
-#' @param x a magpie object
-#' @param y a magpie object
+#' @param x a magpie object or a string referring to a file that can be read in as a mapgie object
+#' @param y a magpie object or a string referring to a file that can be read in as a mapgie object
 #' @param tol optional value between 0 and 1 to restrict value differences between the
 #' two magpie objects to be listed, a data entry must exceed `tol` percent of the maximum
 #' value difference observed in the data to be listed
 #'
 #' @author Falk Benke
 #' @importFrom dplyr mutate arrange desc
-#' @importFrom magclass magpply getYears getItems
+#' @importFrom magclass magpply getYears getItems read.magpie
 #' @export
 compareMagpieObject <- function(x, y, tol = 0) {
+
+  if (is.character(x) && is.character(y)) {
+    x <- read.magpie(x)
+    y <- read.magpie(y)
+  }
+
   # compare dimensions names ----
 
   if (!identical(dim(x), dim(y))) {
@@ -65,12 +71,17 @@ compareMagpieObject <- function(x, y, tol = 0) {
     intersect(getNames(x), getNames(y))
   ]
 
+  if (length(x) == 0) {
+    message("# No overlapping data to identify.")
+    return()
+  }
+
   # compare NA values ----
 
   if (length(x[is.na(x)]) != length(y[is.na(y)])) {
     message(paste0("# Number of NAs differs: ", length(x[is.na(x)]), " != ", length(y[is.na(y)])))
   } else {
-    message("# Number of NAs is identical")
+    message("# Number of NAs is identical (/)")
   }
 
   naX <- magpply(x, function(y) any(is.na(y)), MARGIN = 3)
