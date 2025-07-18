@@ -7,9 +7,9 @@
 compareMagpieObject(x, y, tol = 0)
 }
 \arguments{
-\item{x}{a magpie object}
+\item{x}{a magpie object or a string referring to a file that can be read in as a mapgie object}
 
-\item{y}{a magpie object}
+\item{y}{a magpie object or a string referring to a file that can be read in as a mapgie object}
 
 \item{tol}{optional value between 0 and 1 to restrict value differences between the
 two magpie objects to be listed, a data entry must exceed `tol` percent of the maximum
