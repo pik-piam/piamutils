@@ -2,23 +2,22 @@
 #' based on gamstransfer package
 #'
 #' @param ddata data.frame or data.table
-#' @param gdxPath Output file path (e.g., "output.gdx")
+#' @param gdxFileName Output file name incl. path (e.g., "pXX_someName.gdx")
 #' @param paramName Name of the GAMS parameter in GDX
 #' @param domainCols Optional vector of column names for domains.
 #'                    If NULL, defaults to all columns except `valueCol`.
 #' @param valueCol Name of the numerical value column (default: "value")
 #' @param description Optional description for the parameter (default: "")
+#' @return `NULL`, invisibly. Called for the side effect of writing `gdxFileName`.
 #' @author Alex K. Hagen
-#' @importFrom stats na.omit
-#' @importFrom utils type.convert
-#'
 #' @export
-writeDfToGdx <- function(ddata,
-                         gdxPath,
-                         paramName,
-                         domainCols = NULL,
-                         valueCol = "value",
-                         description = "") {
+
+writeDfToGDXparameter <- function(ddata,
+                                  gdxFileName,
+                                  paramName,
+                                  domainCols = NULL,
+                                  valueCol = "value",
+                                  description = "") {
 
 
   # Automatically infer domainCols if not specified
@@ -48,10 +47,10 @@ writeDfToGdx <- function(ddata,
 
   # Add each domain column as a GAMS Set symbol holding all unique elements
   for (col in domainCols) {
-    set_elements <- unique(na.omit(dfdata[[col]]))
+    setElements <- unique(stats::na.omit(dfdata[[col]]))
     m$addSet(
       name = col,
-      records = set_elements
+      records = setElements
     )
   }
 
@@ -63,5 +62,5 @@ writeDfToGdx <- function(ddata,
     description = description
   )
 
-  m$write(gdxPath)
+  m$write(gdxFileName)
 }
