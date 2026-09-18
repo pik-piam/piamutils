@@ -1,6 +1,6 @@
 # Utilities for the piam-verse
 
-R package **piamutils**, version **0.2.0**
+R package **piamutils**, version **0.2.1**
 
    [![R build status](https://github.com/pik-piam/piamutils/workflows/check/badge.svg)](https://github.com/pik-piam/piamutils/actions) [![codecov](https://codecov.io/gh/pik-piam/piamutils/branch/master/graph/badge.svg)](https://app.codecov.io/gh/pik-piam/piamutils) [![r-universe](https://pik-piam.r-universe.dev/badges/piamutils)](https://pik-piam.r-universe.dev/builds)
 
@@ -38,7 +38,7 @@ In case of questions / problems please contact Falk Benke <benke@pik-potsdam.de>
 
 To cite package **piamutils** in publications use:
 
-Benke F, Hagen A, Schötz C (2026). "piamutils: Utilities for the piam-verse." Version: 0.2.0, <https://github.com/pik-piam/piamutils>.
+Benke F, Hagen A, Schötz C (2026). "piamutils: Utilities for the piam-verse." Version: 0.2.1, <https://github.com/pik-piam/piamutils>.
 
 A BibTeX entry for LaTeX users is
 
@@ -49,6 +49,6 @@ A BibTeX entry for LaTeX users is
   date = {2026-09-18},
   year = {2026},
   url = {https://github.com/pik-piam/piamutils},
-  note = {Version: 0.2.0},
+  note = {Version: 0.2.1},
 }
 ```
