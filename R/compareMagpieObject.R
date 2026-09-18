@@ -19,6 +19,11 @@ compareMagpieObject <- function(x, y, tol = 0) {
     y <- read.magpie(y)
   }
 
+  if (is.null(getNames(x)) && is.null(getNames(y))) {
+    getNames(x) <- "value"
+    getNames(y) <- "value"
+  }
+
   # compare dimensions names ----
 
   if (!identical(dim(x), dim(y))) {
@@ -141,7 +146,7 @@ compareMagpieObject <- function(x, y, tol = 0) {
 
     message("# Largest differences")
     cat("\n")
-    print(df)
+    return(df)
   } else {
     message(paste0("# Values are identical (/)"))
   }
