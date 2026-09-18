@@ -15,7 +15,7 @@ readGdxToDf <- function(symbolName, pathToGdx, ...) {
   stopifnot(length(x) == 1)
   result <- x[[1]]$records
   result <- data.frame(lapply(result, as.character), stringsAsFactors = FALSE)
-  result <- type.convert(result, as.is = TRUE)
+  result <- utils::type.convert(result, as.is = TRUE)
   colnames(result)[length(colnames(result))] <- symbolName
   return(result)
 }

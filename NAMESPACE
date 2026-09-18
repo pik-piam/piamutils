@@ -6,7 +6,7 @@ export(getSystemFile)
 export(niceround)
 export(readGdxToDf)
 export(substitutePlaceholder)
-export(writeDfToGdx)
+export(writeDfToGDXparameter)
 importFrom(dplyr,
   arrange,
   desc,
@@ -31,9 +31,7 @@ importFrom(rlang,
   sym,
   syms
 )
-importFrom(stats,na.omit)
 importFrom(utils,
   read.csv,
-  type.convert,
   write.table
 )
