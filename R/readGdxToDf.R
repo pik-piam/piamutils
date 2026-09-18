@@ -9,6 +9,7 @@
 #' @return A data frame with data about symbolName from the given gdx file.
 #' @author Falk Benke
 #'
+#' @export
 readGdxToDf <- function(symbolName, pathToGdx, ...) {
   x <- gamstransfer::readGDX(pathToGdx, symbolName, ...)
   stopifnot(length(x) == 1)

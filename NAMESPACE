@@ -4,6 +4,7 @@ export(compareMagpieObject)
 export(deletePlus)
 export(getSystemFile)
 export(niceround)
+export(readGdxToDf)
 export(substitutePlaceholder)
 export(writeDfToGdx)
 importFrom(dplyr,
