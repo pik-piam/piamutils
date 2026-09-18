@@ -12,11 +12,16 @@
 #' @importFrom dplyr mutate arrange desc
 #' @importFrom magclass magpply getYears getItems read.magpie
 #' @export
-compareMagpieObject <- function(x, y, tol = 0) {
+compareMagpieObject <- function(x, y, tol = 0) { # nolint cyclocomp_linter
 
   if (is.character(x) && is.character(y)) {
     x <- read.magpie(x)
     y <- read.magpie(y)
+  }
+
+  if (is.null(getNames(x)) && is.null(getNames(y))) {
+    getNames(x) <- "value"
+    getNames(y) <- "value"
   }
 
   # compare dimensions names ----
@@ -141,7 +146,7 @@ compareMagpieObject <- function(x, y, tol = 0) {
 
     message("# Largest differences")
     cat("\n")
-    print(df)
+    return(df)
   } else {
     message(paste0("# Values are identical (/)"))
   }
