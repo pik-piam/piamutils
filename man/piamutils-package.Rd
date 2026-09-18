@@ -20,6 +20,8 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Falk Benke \email{benke@pik-potsdam.de}
+  \item Alex K. Hagen \email{alex.hagen@pik-potsdam.de} (\href{https://orcid.org/0000-0003-4793-8664}{ORCID})
   \item Christof Schötz
 }
 

@@ -5,23 +5,34 @@ export(deletePlus)
 export(getSystemFile)
 export(niceround)
 export(substitutePlaceholder)
-importFrom(dplyr,arrange)
-importFrom(dplyr,desc)
-importFrom(dplyr,mutate)
-importFrom(magclass,"getNames<-")
-importFrom(magclass,getItems)
-importFrom(magclass,getNames)
-importFrom(magclass,getYears)
-importFrom(magclass,is.magpie)
-importFrom(magclass,magpply)
-importFrom(magclass,read.magpie)
-importFrom(magclass,read.report)
+export(writeDfToGdx)
+importFrom(dplyr,
+  arrange,
+  desc,
+  mutate
+)
+importFrom(magclass,
+  "getNames<-",
+  getItems,
+  getNames,
+  getYears,
+  is.magpie,
+  magpply,
+  read.magpie,
+  read.report
+)
 importFrom(magrittr,"%>%")
 importFrom(pkgload,is_dev_package)
-importFrom(rlang,"!!!")
-importFrom(rlang,"!!")
-importFrom(rlang,.data)
-importFrom(rlang,sym)
-importFrom(rlang,syms)
-importFrom(utils,read.csv)
-importFrom(utils,write.table)
+importFrom(rlang,
+  "!!!",
+  "!!",
+  .data,
+  sym,
+  syms
+)
+importFrom(stats,na.omit)
+importFrom(utils,
+  read.csv,
+  type.convert,
+  write.table
+)

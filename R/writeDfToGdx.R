@@ -9,7 +9,10 @@
 #' @param valueCol Name of the numerical value column (default: "value")
 #' @param description Optional description for the parameter (default: "")
 #' @author Alex K. Hagen
+#' @importFrom stats na.omit
+#' @importFrom utils type.convert
 #'
+#' @export
 writeDfToGdx <- function(ddata,
                          gdxPath,
                          paramName,

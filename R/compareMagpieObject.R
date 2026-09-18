@@ -12,7 +12,7 @@
 #' @importFrom dplyr mutate arrange desc
 #' @importFrom magclass magpply getYears getItems read.magpie
 #' @export
-compareMagpieObject <- function(x, y, tol = 0) {
+compareMagpieObject <- function(x, y, tol = 0) { # nolint cyclocomp_linter
 
   if (is.character(x) && is.character(y)) {
     x <- read.magpie(x)
